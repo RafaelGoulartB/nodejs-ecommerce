@@ -10,6 +10,7 @@ module.exports = ()  => {
 
   consign()
     .include('controllers')
+    .then('dao')
     .into(app)
   
     return app;
