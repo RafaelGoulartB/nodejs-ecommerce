@@ -9,6 +9,11 @@
   "author": "Rafael Goulart",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }

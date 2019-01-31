@@ -1,4 +1,4 @@
-let app = require('express')();
+let app = require('./config/custom-express')();
 
 let $HOST = 'localhost';
 let $PORT = 8080;
