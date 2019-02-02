@@ -15,14 +15,20 @@ module.exports = app => {
     productsDAO.get(id)
       .then(result => res.send(result))
       .catch(console.log)
-  })
+  });
   app.post('/product', (req, res) => {
     const product = req.body;
-    let connection = app.dao.connectionFactory();
-    let productsDAO = new app.dao.productsDAO(connection);
+    res.send(product);
+    console.log(product);
+    
 
-    productsDAO.add(product)
-      .then(result => res.send(result))
-      .catch(error => res.send(error))
+  //   let connection = app.dao.connectionFactory();
+  //   let productsDAO = new app.dao.productsDAO(connection);
+
+  //   productsDAO.add(product)
+  //     .then(result => res.send(result))
+  //     .catch(error => res.send(error))
   })
-}
+
+
+};
