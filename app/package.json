@@ -9,12 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.16.4"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "body-parser": "^1.18.3",
     "consign": "^0.1.6",
+    "crypto": "^1.0.1",
     "dotenv": "^6.2.0",
-    "ejs": "^2.6.1"
+    "ejs": "^2.6.1",
+    "mysql": "^2.16.0"
   }
 }

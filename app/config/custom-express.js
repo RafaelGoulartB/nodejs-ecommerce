@@ -13,6 +13,8 @@ module.exports = () => {
 
   consign()
     .include('routes')
+    .then('dao')
+    .then('controllers')
     .into(app);
 
   return app;
