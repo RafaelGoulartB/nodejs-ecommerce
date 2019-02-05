@@ -1,30 +1,30 @@
 module.exports = app => {
-
+  //Select all
   app.get('/product', (req, res) => {
     const connection = app.dao.connectionFactory();
     const productsDAO = new app.dao.productsDAO(connection);
     productsDAO.listAll()
-      .then(result => res.send(result))
-      .catch(err => console.log)
+      .then(result => res.status(200).send(result))
+      .catch(err => res.status(400).send(err));
   });
-
+  // Select by ID
   app.get('/product/:id/', (req, res) => {
     const connection = app.dao.connectionFactory();
     const productsDAO = new app.dao.productsDAO(connection);
     const id = req.params.id;
 
     productsDAO.get(id)
-      .then(result => res.send(result))
-      .catch(console.log)
+      .then(result => res.status(200).send(result))
+      .catch(err => res.status(400).send(err));
   });
-
+  // Add new product
   app.post('/product', (req, res) => {
     const connection = app.dao.connectionFactory();
     const productsDAO = new app.dao.productsDAO(connection);
     const product = req.body;
     productsDAO.add(product)
-      .then(result => res.send(result))
-      .catch(error => res.send(error))
+      .then(result => res.status(201).send("Product added"))
+      .catch(error => res.status(400).send(error))
   });
 
 
