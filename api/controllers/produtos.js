@@ -23,8 +23,18 @@ module.exports = app => {
     const productsDAO = new app.dao.productsDAO(connection);
     const product = req.body;
     productsDAO.add(product)
-      .then(result => res.status(201).send("Product added"))
+      .then(result => res.status(201).send("Product added."))
       .catch(error => res.status(400).send(error))
+  });
+  //Remove a product by ID
+  app.delete('/product/:id', (req, res) => {
+    const connection = app.dao.connectionFactory();
+    const productsDAO = new app.dao.productsDAO(connection);
+    const id = req.params.id;
+
+    productsDAO.remove(id)
+      .then(result => res.status(200).send(`Product with id = ${id} was removed.`))
+      .catch(err => res.status(400).send(err));
   });
 
 
