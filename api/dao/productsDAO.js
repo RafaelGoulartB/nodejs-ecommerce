@@ -36,7 +36,14 @@ class ProductsDAO {
       });
     })
   }
-  filterByCategory(category) {}
+  filterByCategory(category) {
+    return new Promise((resolve, reject) => {
+      this.connection.query('SELECT * FROM products WHERE category = ?', category, (error, result) => {
+        if(error) return reject(error);
+        return resolve(result);
+      })
+    })
+  }
 
 }
 

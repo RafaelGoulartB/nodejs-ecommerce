@@ -36,6 +36,16 @@ module.exports = app => {
       .then(result => res.status(200).send(`Product with id = ${id} was removed.`))
       .catch(err => res.status(400).send(err));
   });
+  // Filter by Category
+  app.get('/product/category/:category', (req, res) => {
+    const category = req.params.category;
+    const connection = app.dao.connectionFactory();
+    const productsDAO = new app.dao.productsDAO(connection);
+
+    productsDAO.filterByCategory(category)
+      .then(result => res.status(200).send(result))
+      .catch(err => res.status(400).send(err))
+  })
 
 
 };
