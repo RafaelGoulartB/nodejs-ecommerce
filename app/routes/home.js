@@ -5,7 +5,7 @@ module.exports = app => {
     const connection = app.dao.connectionFactory();
     const productsDAO = new app.dao.productsDAO(connection);
     productsDAO.listAll()
-      .then(result => res.status(200).send(result))
+      .then(products => res.render('home', {products: JSON.stringify(products)}))
       .catch(err => res.status(400).send(err));
   });
   // Select by ID

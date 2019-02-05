@@ -1,0 +1,25 @@
+body {
+  background-color: #FAFAFA;
+  width: 100vw;
+  overflow: hidden;
+}
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+@media(max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
