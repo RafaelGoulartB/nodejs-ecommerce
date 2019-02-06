@@ -4,14 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-commecer Quamtom</title>
+  <title>E-commecer Quantom</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="/css/utils/reset.css">
   <link rel="stylesheet" href="/css/utils/global.css">
+  <link rel="stylesheet" href="/css/nav-top.css">
 </head>
 <body>
   <header id="header">
-    <nav class="top"></nav>
+    <nav class="top">
+      <div class="container">
+        <a href="/" class="logo">Quantom</a>
+        <div class="search-box">
+          <input type="submit" value="">
+          <input type="search" placeholder="Search goods">
+          <select name="category" id="category">
+            <option value="none">Category</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="clock">Clock</option>
+            <option value="headphone">Headphone</option>
+          </select>
+        </div>
+        <div class="links">
+          <div class="items">
+            <img src="/img/ic_shopping_cart.png" alt>
+            <a href="#">Items</a>
+          </div>
+          <div class="wishlist">
+              <img src="/img/ic_favorite_border.png" alt>
+              <a href="#">Wishlist</a>
+          </div>
+          <div class="sing-in">
+              <img src="/img/ic_account_circle.png" alt>
+              <a href="#">Sing-in</a>
+          </div>
+        </div>
+      </div> <!-- end container -->
+    </nav>
     <nav class="bottom"></nav>
   </header>
   <main>

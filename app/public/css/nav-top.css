@@ -1,0 +1,69 @@
+#header .top {
+  background-color: #FFFFFF;
+  width: 100vw;
+}
+#header .top .container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+}
+#header .top .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1.25px;
+  color: #000000;
+  text-decoration: none;
+}
+#header .top .search-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #F5F5F5;
+  padding: 12px 10px;
+  /* margin-right: 10em; */
+}
+#header .top .search-box input { 
+  border: none;
+  padding-left: 8px;
+}
+#header .top .search-box input[type="submit"] {
+  background-image: url('/img/ic_search.png');
+  background-color: transparent;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #b2b2b2;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+#header .top .links {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+}
+#header .top .links div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .top .links div a {
+  font-size: 14px;
+  color: #808080;
+  margin-left: 5px;
+  text-decoration: none;
+}
+#header .top .links div a:hover {
+  text-decoration: underline;
+}
