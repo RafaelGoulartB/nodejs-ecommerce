@@ -1,7 +1,6 @@
 body {
   background-color: #FAFAFA;
   width: 100vw;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -9,18 +8,18 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.desktop {
-  display: block;
+#desktop {
+  display: flex;
 }
-.mobile {
+#mobile {
   display: none;
 }
 
 @media(max-width: 800px) {
-  .desktop {
+  #desktop {
     display: none;
   }
-  .mobile {
-    display: block;
+  #mobile {
+    display: flex;
   }
 }

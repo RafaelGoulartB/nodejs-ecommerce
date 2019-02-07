@@ -11,23 +11,27 @@
   <link rel="stylesheet" href="/css/utils/reset.css">
   <link rel="stylesheet" href="/css/utils/global.css">
   <link rel="stylesheet" href="/css/nav-top.css">
+  <link rel="stylesheet" href="/css/nav-bottom.css">
 </head>
 <body>
   <header id="header">
     <nav class="top">
       <div class="container">
         <a href="/" class="logo">Quantom</a>
-        <div class="search-box">
-          <input type="submit" value="">
-          <input type="search" placeholder="Search goods">
-          <select name="category" id="category">
-            <option value="none">Category</option>
-            <option value="Smartphone">Smartphone</option>
-            <option value="clock">Clock</option>
-            <option value="headphone">Headphone</option>
-          </select>
-        </div>
-        <div class="links">
+        <div class="search-box" id="desktop">
+          <form action="" method="post">
+            <input type="submit" value="">
+            <input type="search" placeholder="Search goods" name="search-text">
+            <select name="category" id="category">
+              <option value="none">Category</option>
+              <option value="Smartphone">Phone</option>
+              <option value="clock">Clock</option>
+              <option value="headphone">Headphone</option>
+            </select>
+            <img src="img/arrow_icon.png" alt class="arrow-category">
+          </form>
+        </div> 
+        <div class="links" id="desktop">
           <div class="items">
             <img src="/img/ic_shopping_cart.png" alt>
             <a href="#">Items</a>
@@ -41,6 +45,43 @@
               <a href="#">Sing-in</a>
           </div>
         </div>
+        <div id="mobile">
+          <span class="dropdown">
+            <img src="/img/btn-menu-mobile.png" onclick="open_menu()">
+            <nav class="links-m" id="menu-mobile">
+              <form action="/" method="post">
+                <input type="text" name="search-text" placeholder="Search goods">
+                <input type="submit" value="">
+              </form>
+              <a href="#" class="link">Super Deals</a>
+              <a href="#" class="link">Featured Brands</a>
+              <a href="#" class="link">Collections</a>
+              <a href="#" class="link">Bestselling</a>
+              <div id="currency-mobile">
+                <div class="btn-expand" onclick="toogleItemListCurrency()">
+                  <a href="#">USD</a>
+                  <img src="img/arrow_icon.png" alt class="arrow-category">
+                </div>
+                <div class="content" id="content-currency">
+                  <a href="#">USD</a>
+                  <a href="#">BRL</a>
+                  <a href="#">XBT</a>
+                </div>
+              </div>
+              <div id="language">
+                <div class="btn-expand" onclick="toogleItemListLanguage()">
+                  <a href="#">Language</a>
+                  <img src="img/arrow_icon.png" alt class="arrow-category">
+                </div>
+                <div class="content" id="content-language">
+                  <a href="#">English</a>
+                  <a href="#">Portuguese</a>
+                </div>
+              </div>
+              <a href="#" class="close-menu" onclick="close_menu()">X</a>
+            </nav>
+          </span>
+        </div>
       </div> <!-- end container -->
     </nav>
     <nav class="bottom"></nav>
@@ -53,5 +94,7 @@
   </main>
 
   <footer id="footer"></footer>
+
+  <script src="js/menu-mobile.js"></script>
 </body>
 </html>
