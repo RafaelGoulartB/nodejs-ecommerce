@@ -91,3 +91,9 @@ header .bottom .label .cta img {
   width: 2px;
   background-color: transparent;
 }
+
+@media(max-width: 850px) {
+  header .bottom {
+    display: none;
+  }
+}
