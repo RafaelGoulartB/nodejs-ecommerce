@@ -1,25 +1,47 @@
 header .bottom {
-  background-color: #808080;
+  background-color: #fff;
+  color: #808080;
+  border-bottom: 2px solid #F5F5F5;
 }
+header .bottom .all-category {
+  border-right: 2px solid #f5f5f5;
+  padding-right: 6em;
+}
+header .bottom .all-category .cta img {
+  margin-right: 10px;
+}
+/* Dropdown */
 header .bottom .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .bottom .dropdown {
   position: relative;
 }
 header .bottom .dropdown .cta {
   display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+/* Activete dropdown */
+header .bottom .dropdown:hover > .dropdown-submenu {
+  visibility: visible;
+  z-index: 99;
 }
 header .bottom .dropdown .dropdown-submenu {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 20px;
+  top: 50px;
   border-radius: 8px;
   padding: 15px 40px;
   background-color: #fff;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.2)
+  box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+
+  visibility: hidden;
+  z-index: 0;
+  transition: visibility .2s linear, z-index .2s linear;
 }
 header .bottom .dropdown .dropdown-submenu a {
   text-decoration: none;
@@ -29,4 +51,43 @@ header .bottom .dropdown .dropdown-submenu a {
 }
 header .bottom .dropdown .dropdown-submenu a:hover {
   text-decoration: underline;
+}
+/* Menu links */
+header .bottom .menu-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header .bottom .menu-links a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+}
+header .bottom .menu-links a:hover {
+  text-decoration: underline;
+}
+/* Labels */
+header .bottom .labels {
+  width: 25%;
+  height: 300%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2em;
+}
+header .bottom .label {
+  padding-left: 1.7em;
+  padding-right: 1.7em;
+  height: 300%;
+  color: #B2B2B2;
+  font-size: 16px;
+  border-left: 2px solid #F5F5F5;
+}
+header .bottom .label .cta img {
+  margin-left: 5px;
+}
+.helper-line-labels {
+  height: 55px;
+  width: 2px;
+  background-color: transparent;
 }

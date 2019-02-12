@@ -1,6 +1,7 @@
 header .top {
   background-color: #FFFFFF;
   width: 100vw;
+  border-bottom: 2px solid #F5F5F5;
 }
 header .top .container {
   width: 80%;
