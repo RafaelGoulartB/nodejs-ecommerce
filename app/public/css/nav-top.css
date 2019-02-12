@@ -3,7 +3,7 @@ header .top {
   width: 100vw;
 }
 header .top .container {
-  width: 75%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,11 +17,20 @@ header .top .logo {
   color: #4C4C4C;
   text-decoration: none;
 }
+header .top .search-box {
+  width: 32%;
+}
+header .top .search-box div {
+  display: flex;
+}
 header .top .search-box form {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   border: 2px solid #F5F5F5;
-  padding: 12px 10px;
+  border-radius: 4px;
+  padding: 10px 10px;
+  width: 100%;
 }
 header .top .search-box input { 
   border: none;
@@ -39,7 +48,7 @@ select {
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 10px;
   color: #b2b2b2;
   font-weight: bold;
   letter-spacing: 1.25px;
@@ -52,7 +61,7 @@ select::-ms-expand {
   display: none;
 }
 header .top .links {
-  width: 28%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
 }
@@ -64,14 +73,34 @@ header .top .links div {
 header .top .links div a {
   font-size: 14px;
   color: #808080;
-  margin-left: 5px;
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: .2px;
   text-decoration: none;
 }
 header .top .links div a:hover {
   text-decoration: underline;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1100px) {
+  header .top .container {
+    width: 90%;
+  }
+  header .top .logo {
+    font-size: 20px;
+  }
+  header .top .search-box {
+    width: 35%;
+  }
+  header .top .links {
+    width: 30%;
+    align-items: center;
+  }
+  header .top .links a {
+    font-size: 10px;
+  }
+
+@media(max-width: 850px) {
   header .top .logo {
     font-size: 20px;
   }
