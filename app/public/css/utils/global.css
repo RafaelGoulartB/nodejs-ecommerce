@@ -2,15 +2,20 @@ body {
   background-color: #FAFAFA;
   width: 100vw;
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
+.line-div {
+  width: 100vw;
+  height: 2px;
+  background-color: #F5F5F5;
+}
 #desktop {
-  display: flex;
+  display: initial;
 }
 #mobile {
   display: none;

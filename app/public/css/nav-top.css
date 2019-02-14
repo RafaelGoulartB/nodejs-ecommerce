@@ -10,7 +10,7 @@ header .top .container {
   justify-content: space-between;
   padding: 24px 10px;
 }
-header .top .logo {
+.logo {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
