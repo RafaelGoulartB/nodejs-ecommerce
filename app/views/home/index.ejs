@@ -166,17 +166,17 @@
   <main id="main">
     <section class="slider">
       <div class="container">
-        <div class="frame">
-          <button class="back-slider btn-slider"><</button>
+        <div class="frame" id="frame">
+          <button class="back-slider btn-slider" onclick="previusSlider()"><</button>
           <div class="content-slider">
             <p class="text-slider">The Universe Through A Child S Eyes</p>
-            <div class="selects-slider">
+            <div class="selects-slider" id="dots">
               <div class="select selected"></div>
               <div class="select"></div>
               <div class="select"></div>
             </div>
           </div>
-          <button class="next-slider btn-slider">></button>
+          <button class="next-slider btn-slider" onclick="nextSlider()">></button>
         </div>
       </div>
     </section>
@@ -188,5 +188,6 @@
   <footer id="footer"></footer>
 
   <script src="js/menu-mobile.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

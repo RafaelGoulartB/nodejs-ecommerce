@@ -2,8 +2,6 @@
   margin-top: 3em;
 }
 .slider .frame {
-  background-image: url('../img/slider/img1.png');
-
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -12,6 +10,16 @@
 
   border-radius: 8px;
 }
+#main .slider .img-1 {
+  background-image: url('../img/slider/img1.png');
+}
+#main .slider .img-2 {
+  background-image: url('../img/slider/img2.png');
+}
+#main .slider .img-3 {
+  background-image: url('../img/slider/img3.png');
+}
+
 .slider .frame .content-slider {
   display: flex;
   flex-direction: column;
@@ -26,7 +34,7 @@
 .slider .frame .content-slider .selects-slider .select {
   height: 3px;
   width: 60px;
-  background-color: #bbbbbb;
+  background-color: #737373;
   border-radius: 6px;
 }
 #main .slider .frame .content-slider .selected {
