@@ -2,6 +2,7 @@ body {
   background-color: #FAFAFA;
   width: 100vw;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 .container {
   width: 80%;

@@ -97,3 +97,35 @@ header .bottom .label .cta img {
     display: none;
   }
 }
+
+@media(max-width: 1100px) {
+  header .bottom .conatiner {
+    width: 95%;
+  } 
+  header .bottom .all-category {
+    padding-right: 1em;
+  }
+  header .bottom .all-category .cta p {
+    font-size: 13px;
+  }
+  header .bottom .menu-links {
+    width: 50%;
+    justify-content: space-around;
+  }
+  header .bottom .menu-links a {
+    font-size: 13px;
+  }
+  header .bottom .labels {
+    /* margin-right: 6em; */
+  }
+  header .bottom .labels:last-child {
+    padding-right: .5em;
+  }
+  header .bottom .label {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  header .bottom .label .cta p {
+    font-size: 13px;
+  }
+}
