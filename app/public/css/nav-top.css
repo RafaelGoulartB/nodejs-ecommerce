@@ -38,7 +38,7 @@ header .top .search-box input {
   padding-left: 8px;
 }
 header .top .search-box input[type="submit"] {
-  background-image: url('/img/ic_search.png');
+  background-image: url('/img/icon/ic_search.png');
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -56,7 +56,7 @@ select {
   letter-spacing: 1.25px;
 }
 select::after {
-  content: url('/img/arrow_icon.png');
+  content: url('/img/icon/arrow_icon.png');
   position: absolute;
 }
 select::-ms-expand {
@@ -122,7 +122,7 @@ header .top .links div a:hover {
     padding-left: 15px;
   }
   header #mobile form input[type="submit"] {
-    background-image: url('/img/ic_search.png');
+    background-image: url('/img/icon/ic_search.png');
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
