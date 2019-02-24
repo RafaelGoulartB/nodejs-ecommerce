@@ -7,7 +7,7 @@ class AppController {
     this.app = express();
 
   this.middlewares();
-    this.routes();
+  this.routes();
   }
 
   middlewares() {
