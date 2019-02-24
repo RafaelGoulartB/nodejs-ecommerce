@@ -1,0 +1,59 @@
+main .annoucement-grid .container {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  height: 320px;
+}
+
+main .annoucement-grid .container .ann-alone {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+}
+main .annoucement-grid .container .ann-alone .text {
+  font-size: 20px;
+  color: #666666;
+}
+main .annoucement-grid .container .main-ann {
+  position: relative;
+  background-image: url('../img/main-ann.png');
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+main .annoucement-grid .container .main-ann .text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  top: 35%;
+}
+main .annoucement-grid .container .main-ann .text .title {
+  line-height: 1.5em;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+}
+main .annoucement-grid .container .main-ann .text .desc {
+  color: #7a8584;
+  margin-top: 2em;
+  font-size: 14px;
+}
+main .annoucement-grid .container .ann-group {
+  display: grid;
+  grid-gap: 1em;
+}
+main .annoucement-grid .container .ann-group .ann {
+  display: flex;
+  align-items: center;
+  line-height: 1.5em;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+}
