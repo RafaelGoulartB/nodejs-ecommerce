@@ -54,6 +54,30 @@ main .annoucement-grid .container .ann-group .ann {
   align-items: center;
   line-height: 1.5em;
   border-radius: 6px;
+  color: #666666;
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+}
+
+@media(max-width: 1100px) {
+  main .annoucement-grid .container {
+    height: 280px;
+  }
+  main .annoucement-grid .container .ann-alone .text {
+    font-size: 16px;
+  }
+  main .annoucement-grid .container .ann-group .ann {
+    font-size: 14px;
+  }
+}
+@media(max-width: 850px) {
+  main .annoucement-grid .container {
+    grid-template-rows: 300px;
+    grid-template-columns: initial;
+    grid-gap: 15px;
+    margin-bottom: 20em;
+  }
+  main .annoucement-grid .container .ann-group {
+    grid-gap: 15px;
+  }
 }
