@@ -63,9 +63,12 @@ select::-ms-expand {
   display: none;
 }
 header .top .links {
-  width: 25%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+#desktop-links {
+  width: 22%;
 }
 header .top .links div {
   display: flex;
@@ -95,12 +98,15 @@ header .top .links div a:hover {
     width: 35%;
   }
   header .top .links {
-    width: 30%;
     align-items: center;
+  }
+  header #desktop-links {
+    width: 35%;
   }
   header .top .links a {
     font-size: 10px;
   }
+}
 
 @media(max-width: 850px) {
   header .top .logo {
