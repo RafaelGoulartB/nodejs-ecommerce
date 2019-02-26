@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/css/nav-bottom.css">
   <link rel="stylesheet" href="/css/slider.css">
   <link rel="stylesheet" href="/css/ann.css">
+  <link rel="stylesheet" href="/css/products-section.css">
   <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
@@ -209,7 +210,133 @@
       </div>
     </section>
 
-    <section class="products"></section>
+    <section class="products-section">
+      <div class="container">
+        <aside>
+          <div class="categories">
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_desktop_windows.png" alt>
+                <p>Computers</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_desktop_mac.png" alt>
+                <p>Apple Computers</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_laptop.png" alt>
+                <p>Laptop</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_keyboard.png" alt>
+                <p>Friends</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_memory.png" alt>
+                <p>Computer Components</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_speaker.png" alt>
+                <p>Accessories</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_phone_iphone.png" alt>
+                <p>Cell Phone</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_tv.png" alt>
+                <p>TV & Video</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_videogame_asset.png" alt>
+                <p>Game consoles</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+            <a href="#" class="category">
+              <div class="content">
+                <img src="img/categories/ic_watch.png" alt>
+                <p>Watches</p>
+              </div>
+              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+            </a>
+          </div>
+          <div class="promo-code">
+            <div class="texts">
+              <p class="title">Look Up In The Sky</p>
+              <p class="desc">Astronomy Or Astrology</p>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="tab">
+            <div class="texts">
+              <p class="item-tab item-tab-active">Popular products</p>
+              <p class="item-tab">Low price</p>
+              <p class="item-tab">High price</p>
+            </div>
+            <div class="icons">
+                <div>
+                  <div class="line-div-tab"></div>
+                  <button class="icon icon-grid"></button>
+                </div>
+                <div>
+                  <div class="line-div-tab"></div>
+                  <button class="icon icon-list"></button>
+                </div>
+              </div>
+          </div>
+          <div class="products">
+            <% products.forEach(product => { %>
+            <div class="product">
+              <div class="top">
+                <div class="labels">
+                  <p>sale</p>
+                </div>
+                <div class="actions">
+                  <button class="add-list"></button>
+                  <button class="add-favorite"></button>
+                </div>
+              </div>
+              <div class="infos">
+                <img class="img" src="<%= 'img/product/' + product.img_url %>" alt="<%= product.description %>">
+                <p class="name"><%= product.nome %></p>
+                <div class="rating"></div>
+                <div class="price">
+                  <p class="price-value"><%= '$ ' + product.price %></p>
+                  <button class="add-car"></button>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </main>
+      </div>
+    </section>
   </main>
 
   <footer id="footer">

@@ -1,5 +1,5 @@
 require('dotenv').config()
-const app = require('./config/custom-express')();
+const app = require('./config/custom-express');
 
 const { PORT } = process.env;
 
