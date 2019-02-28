@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 /* Positioning */
 .products-section .container {
   display: grid;
@@ -133,6 +136,10 @@
     border-radius: 6px;
     background-color: #fff;
   } 
+  .products-section main .products .product img {
+    width: 157px;
+    height: 160px;
+  }
   .products-section main .products .product .top {
     width: 100%;
     display: flex;
@@ -178,6 +185,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-bottom: 2em;
   }
   .products-section main .products .product .infos .price .price-value {
     color: #666666;

@@ -4,12 +4,19 @@ module.exports = app => {
   app.get('/', (req, res) => {
     const connection = app.dao.connectionFactory();
     const productsDAO = new app.dao.productsDAO(connection);
-    productsDAO.listAll()
-      .then(products => {
-        res.render('home', {products: products})
-        console.log(products);
-      })
+    productsDAO.list(6)
+      .then(products => res.render('home', {products: products, search: false}))
       .catch(err => res.status(400).send(err));
+  });
+  // Filter by Category
+  app.get('/s/:filter', (req, res) => {
+    const filter = req.params.filter;
+    const connection = app.dao.connectionFactory();
+    const productsDAO = new app.dao.productsDAO(connection);
+
+    productsDAO.filterByCategory(filter)
+      .then(products => res.render('home', {products: products, search: true}))
+      .catch(err => res.status(400).send(err))
   });
   // Select by ID
   app.get('/product/:id/', (req, res) => {
@@ -21,17 +28,6 @@ module.exports = app => {
       .then(result => res.status(200).send(result))
       .catch(err => res.status(400).send(err));
   });
-  // Filter by Category
-  app.get('/product/category/:category', (req, res) => {
-    const category = req.params.category;
-    const connection = app.dao.connectionFactory();
-    const productsDAO = new app.dao.productsDAO(connection);
-
-    productsDAO.filterByCategory(category)
-      .then(result => res.status(200).send(result))
-      .catch(err => res.status(400).send(err))
-  });
-
   // Add new product
   app.post('/product', (req, res) => {
     const connection = app.dao.connectionFactory();

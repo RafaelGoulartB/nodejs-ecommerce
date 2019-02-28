@@ -23,7 +23,7 @@
       <div class="container">
         <a href="/" class="logo">Quantom</a>
         <div class="search-box" id="desktop">
-          <form action="" method="post">
+          <form action="/s/" method="post">
             <div>
               <input type="submit" value="">
               <input type="search" placeholder="Search goods" name="search-text">
@@ -36,28 +36,28 @@
                 <option value="headphone">Headphone</option>
               </select>
             </div>
-            <img src="img/icon/arrow_icon.png" alt class="arrow-category">
+            <img src="../img/icon/arrow_icon.png" alt class="arrow-category">
           </form>
         </div> 
         <div id="desktop" style="width: 24%;">
           <div class="links">
             <div class="items">
-              <img src="/img/icon/ic_shopping_cart.png" alt>
+              <img src="/../img/icon/ic_shopping_cart.png" alt>
               <a href="#">Items</a>
             </div>
             <div class="wishlist">
-                <img src="/img/icon/ic_favorite_border.png" alt>
+                <img src="/../img/icon/ic_favorite_border.png" alt>
                 <a href="#">Wishlist</a>
             </div>
             <div class="sing-in">
-                <img src="/img/icon/ic_account_circle.png" alt>
+                <img src="/../img/icon/ic_account_circle.png" alt>
                 <a href="#">Sing-in</a>
             </div>
           </div>
         </div>
         <div id="mobile">
           <span class="dropdown">
-            <img src="/img/btn-menu-mobile.png" onclick="open_menu()">
+            <img src="/../img/btn-menu-mobile.png" onclick="open_menu()">
             <nav class="links-m" id="menu-mobile">
               <form action="/" method="post">
                 <input type="text" name="search-text" placeholder="Search goods">
@@ -70,7 +70,7 @@
               <div id="currency-mobile">
                 <div class="btn-expand" onclick="toogleItemListCurrency()">
                   <a href="#">USD</a>
-                  <img src="img/icon/arrow_icon.png" alt class="arrow-category">
+                  <img src="../img/icon/arrow_icon.png" alt class="arrow-category">
                 </div>
                 <div class="content" id="content-currency">
                   <a href="#">USD</a>
@@ -81,11 +81,11 @@
               <div id="language">
                 <div class="btn-expand" onclick="toogleItemListLanguage()">
                   <a href="#">Language</a>
-                  <img src="img/icon/arrow_icon.png" alt class="arrow-category">
+                  <img src="../img/icon/arrow_icon.png" alt class="arrow-category">
                 </div>
                 <div class="content" id="content-language">
-                  <a href="#">English</a>
-                  <a href="#">Portuguese</a>
+                  <a href="/l/en">English</a>
+                  <a href="/l/pt">Portuguese</a>
                 </div>
               </div>
               <a href="#" class="close-menu" onclick="close_menu()">X</a>
@@ -100,15 +100,15 @@
         <div class="all-category dropdown">
           <div class="cta">
             <div class="helper-line-labels"></div>
-            <img src="img/icon/ic_menu.png" alt>
+            <img src="../img/icon/ic_menu.png" alt>
             <p>All Categories</p>
           </div>
 
           <nav class="dropdown-submenu">
-            <a href="#">Smartphone</a>
-            <a href="#">Clock</a>
-            <a href="#">Headphone</a>
-            <a href="#">Glass</a>
+            <a href="/s/smartphone">Smartphone</a>
+            <a href="/s/clock">Clock</a>
+            <a href="/s/headphone">Headphone</a>
+            <a href="/s/glass">Glass</a>
           </nav>
         </div>
 
@@ -126,7 +126,7 @@
               <div class="cta">
                 <div class="helper-line-labels"></div>
                 <p>Help</p>
-                <img src="img/icon/arrow_icon.png" alt>
+                <img src="../img/icon/arrow_icon.png" alt>
               </div>
     
               <nav class="dropdown-submenu">
@@ -140,7 +140,7 @@
               <div class="cta">
                 <div class="helper-line-labels"></div>
                 <p>USD</p>
-                <img src="img/icon/arrow_icon.png" alt>
+                <img src="../img/icon/arrow_icon.png" alt>
               </div>
     
               <nav class="dropdown-submenu">
@@ -154,21 +154,19 @@
               <div class="cta">
                 <div class="helper-line-labels"></div>
                 <p>Language</p>
-                <img src="img/icon/arrow_icon.png" alt>
+                <img src="../img/icon/arrow_icon.png" alt>
               </div>
     
               <nav class="dropdown-submenu">
-                <a href="#">English</a>
-                <a href="#">Portuguese</a>
+                <a href="/l/en">English</a>
+                <a href="/l/pt">Portuguese</a>
               </nav>
           </div>
         </div>
-        
-        
-
     </nav>
   </header>
   <main id="main">
+    <% if(!search) { %>
     <section class="slider">
       <div class="container">
         <div class="frame" id="frame">
@@ -188,7 +186,7 @@
     <section class="annoucement-grid">
       <div class="container">
         <div class="ann-alone">
-          <img src="img/headphone-ann.png" alt>
+          <img src="../img/headphone-ann.png" alt>
           <p class="text">Astronomy Or Astrology</p>
         </div>
         <div class="main-ann" id="desktop">
@@ -199,90 +197,90 @@
         </div>
         <div class="ann-group">
           <div class="ann">
-            <img src="img/pencil-ann.png" alt>
+            <img src="../img/pencil-ann.png" alt>
             <p class="text">Getting Free Publicity For Your Business</p>
           </div>
           <div class="ann">
-            <img src="img/clock-ann.png" alt>
+            <img src="../img/clock-ann.png" alt>
             <p class="text">How Plasma Tvs And Lcd Tvs Differ</p>
           </div>
         </div>
       </div>
     </section>
-
+    <% } %>
     <section class="products-section">
       <div class="container">
         <aside>
           <div class="categories">
-            <a href="#" class="category">
+            <a href="/s/computer" class="category">
               <div class="content">
-                <img src="img/categories/ic_desktop_windows.png" alt>
+                <img src="../img/categories/ic_desktop_windows.png" alt>
                 <p>Computers</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/apple" class="category">
               <div class="content">
-                <img src="img/categories/ic_desktop_mac.png" alt>
+                <img src="../img/categories/ic_desktop_mac.png" alt>
                 <p>Apple Computers</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/laptop" class="category">
               <div class="content">
-                <img src="img/categories/ic_laptop.png" alt>
+                <img src="../img/categories/ic_laptop.png" alt>
                 <p>Laptop</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/friend" class="category">
               <div class="content">
-                <img src="img/categories/ic_keyboard.png" alt>
+                <img src="../img/categories/ic_keyboard.png" alt>
                 <p>Friends</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/components" class="category">
               <div class="content">
-                <img src="img/categories/ic_memory.png" alt>
+                <img src="../img/categories/ic_memory.png" alt>
                 <p>Computer Components</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/accessories" class="category">
               <div class="content">
-                <img src="img/categories/ic_speaker.png" alt>
+                <img src="../img/categories/ic_speaker.png" alt>
                 <p>Accessories</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/smartphone" class="category">
               <div class="content">
-                <img src="img/categories/ic_phone_iphone.png" alt>
+                <img src="../img/categories/ic_phone_iphone.png" alt>
                 <p>Cell Phone</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/video" class="category">
               <div class="content">
-                <img src="img/categories/ic_tv.png" alt>
+                <img src="../img/categories/ic_tv.png" alt>
                 <p>TV & Video</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/console" class="category">
               <div class="content">
-                <img src="img/categories/ic_videogame_asset.png" alt>
+                <img src="../img/categories/ic_videogame_asset.png" alt>
                 <p>Game consoles</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
-            <a href="#" class="category">
+            <a href="/s/clock" class="category">
               <div class="content">
-                <img src="img/categories/ic_watch.png" alt>
+                <img src="../img/categories/ic_watch.png" alt>
                 <p>Watches</p>
               </div>
-              <img src="img/categories/ic_keyboard_arrow_right.png" alt>
+              <img src="../img/categories/ic_keyboard_arrow_right.png" alt>
             </a>
           </div>
           <div class="promo-code">
@@ -295,9 +293,9 @@
         <main>
           <div class="tab">
             <div class="texts">
-              <p class="item-tab item-tab-active">Popular products</p>
-              <p class="item-tab">Low price</p>
-              <p class="item-tab">High price</p>
+              <a href="/s/popular" class="item-tab item-tab-active">Popular products</a>
+              <a href="/s/lowprice" class="item-tab">Low price</a>
+              <a href="/s/highprice" class="item-tab">High price</a>
             </div>
             <div class="icons">
                 <div>
@@ -323,7 +321,7 @@
                 </div>
               </div>
               <div class="infos">
-                <img class="img" src="<%= 'img/product/' + product.img_url %>" alt="<%= product.description %>">
+                <img class="img" src="<%= '../img/product/' + product.img_url %>" alt="<%= product.description %>">
                 <p class="name"><%= product.nome %></p>
                 <div class="rating"></div>
                 <div class="price">
@@ -351,10 +349,10 @@
               <a href="#">Contacts</a>
             </div>
             <div class="social-links">
-              <a href="https://www.facebook.com" target="_blank"><img src="img/icon/ic_facebook.png" alt="Facebook"></a>
-              <a href="https://www.twitter.com" target="_blank"><img src="img/icon/ic_twitter.png" alt="Twitter"></a>
-              <a href="https://www.instagram.com" target="_blank"><img src="img/icon/ic_instagram.png" alt="Instagram"></a>
-              <a href="https://www.youtube.com" target="_blank"><img src="img/icon/ic_youtube.png" alt="Youtube"></a>
+              <a href="https://www.facebook.com" target="_blank"><img src="../img/icon/ic_facebook.png" alt="Facebook"></a>
+              <a href="https://www.twitter.com" target="_blank"><img src="../img/icon/ic_twitter.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="../img/icon/ic_instagram.png" alt="Instagram"></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="../img/icon/ic_youtube.png" alt="Youtube"></a>
             </div>
           </div>
         </div>
@@ -369,10 +367,10 @@
             <div class="payment-methods">
               <p class="desc">Accepted payment met</p>
               <div>
-                <img src="img/icon/ic_visa.png" alt="Visa">
-                <img src="img/icon/ic_mastercard.png" alt="Mastercard">
-                <img src="img/icon/ic_paypal.png" alt="Paypal">
-                <img src="img/icon/ic_amazon.png" alt="Amazon">
+                <img src="../img/icon/ic_visa.png" alt="Visa">
+                <img src="../img/icon/ic_mastercard.png" alt="Mastercard">
+                <img src="../img/icon/ic_paypal.png" alt="Paypal">
+                <img src="../img/icon/ic_amazon.png" alt="Amazon">
               </div>
             </div>
           </div>
@@ -382,10 +380,10 @@
       <div class="container">
         <a href="/" class="logo">Quantom</a>
         <div class="social-links">
-          <a href="https://www.facebook.com" target="_blank"><img src="img/icon/ic_facebook.png" alt="Facebook"></a>
-          <a href="https://www.twitter.com" target="_blank"><img src="img/icon/ic_twitter.png" alt="Twitter"></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="img/icon/ic_instagram.png" alt="Instagram"></a>
-          <a href="https://www.youtube.com" target="_blank"><img src="img/icon/ic_youtube.png" alt="Youtube"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="../img/icon/ic_facebook.png" alt="Facebook"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="../img/icon/ic_twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="../img/icon/ic_instagram.png" alt="Instagram"></a>
+          <a href="https://www.youtube.com" target="_blank"><img src="../img/icon/ic_youtube.png" alt="Youtube"></a>
         </div>
         <div class="info-texts">
           <p class="info-text">© 2016. Quantum UI kit</p>

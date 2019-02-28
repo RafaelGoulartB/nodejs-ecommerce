@@ -4,14 +4,20 @@ class ProductsDAO {
     this.connection = connection;
   }
 
-  listAll() {
+  list(limmit) {
     return new Promise((resolve, reject) => {
-      this.connection.query('select * from products', (error, result) => {
+      if(!limmit) {
+        this.connection.query('select * from products', (error, result) => {
+          if(error) return reject(error);
+          return resolve(result);
+        })
+      }
+      this.connection.query('select * from products LIMIT ?', limmit , (error, result) => {
         if(error) return reject(error);
         return resolve(result);
-      })
-    });
-  }
+      });
+    }
+  )}
   get(id) {
     return new Promise((resolve, reject) => {
       this.connection.query('select * from products where id=?',id, (error, result) => {
