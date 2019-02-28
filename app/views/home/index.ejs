@@ -293,9 +293,21 @@
         <main>
           <div class="tab">
             <div class="texts">
-              <a href="/s/popular" class="item-tab item-tab-active">Popular products</a>
-              <a href="/s/lowprice" class="item-tab">Low price</a>
-              <a href="/s/highprice" class="item-tab">High price</a>
+              <%if(active_bar=='pp') {%>
+                <a href="/" class="item-tab item-tab-active">Popular products</a>
+                <a href="/s/asc" class="item-tab">Low price</a>
+                <a href="/s/desc" class="item-tab">High price</a>
+              <% } %>
+              <%if(active_bar=='lp') {%>
+                <a href="/" class="item-tab">Popular products</a>
+                <a href="/s/asc" class="item-tab item-tab-active">Low price</a>
+                <a href="/s/desc" class="item-tab">High price</a>
+              <% } %>
+              <%if(active_bar=='hp') {%>
+                <a href="/" class="item-tab">Popular products</a>
+                <a href="/s/asc" class="item-tab">Low price</a>
+                <a href="/s/desc" class="item-tab item-tab-active">High price</a>
+              <% } %>
             </div>
             <div class="icons">
                 <div>

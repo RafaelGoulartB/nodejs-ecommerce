@@ -4,7 +4,7 @@ class ProductsDAO {
     this.connection = connection;
   }
 
-  list(limmit) {
+  list(limmit, order) {
     return new Promise((resolve, reject) => {
       if(!limmit) {
         this.connection.query('select * from products', (error, result) => {
@@ -44,6 +44,18 @@ class ProductsDAO {
   }
   filterByCategory(category) {
     return new Promise((resolve, reject) => {
+      if(category == 'asc') {
+        this.connection.query('SELECT * FROM `products` ORDER BY `products`.`price` ASC', (error, result) => {
+          if(error) return reject(error);
+          return resolve(result);
+        })
+      }
+      if(category == 'desc') {
+        this.connection.query('SELECT * FROM `products` ORDER BY `products`.`price` DESC', (error, result) => {
+          if(error) return reject(error);
+          return resolve(result);
+        })
+      }
       this.connection.query('SELECT * FROM products WHERE category = ?', category, (error, result) => {
         if(error) return reject(error);
         return resolve(result);
