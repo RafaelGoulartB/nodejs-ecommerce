@@ -55,3 +55,18 @@
   color: #ffffff;
   font-size: 18px;
 }
+
+@media(max-width: 900px) {
+  #main .slider .img-1 {
+    background-image: url('../img/slider/img1.png');
+  }
+  #main .slider .img-2 {
+    background-image: url('../img/slider/img2.png');
+  }
+  #main .slider .img-3 {
+    background-image: url('../img/slider/img3.png');
+  }
+  .slider .frame .content-slider .text-slider {
+    font-size: 18px;
+  }
+}

@@ -208,7 +208,7 @@
       </div>
     </section>
     <% } %>
-    <section class="products-section">
+    <section id="products-section">
       <div class="container">
         <aside>
           <div class="categories">
@@ -336,10 +336,11 @@
                 <img class="img" src="<%= '../img/product/' + product.img_url %>" alt="<%= product.description %>">
                 <p class="name"><%= product.nome %></p>
                 <div class="rating"></div>
-                <div class="price">
+                <form method="POST" action="/car" class="price">
                   <p class="price-value"><%= '$ ' + product.price %></p>
-                  <button class="add-car"></button>
-                </div>
+                  <input type="hidden" name="product" value="<%= product.id %>">
+                  <input type="submit" value="" class="add-car"></input>
+                </form>
               </div>
             </div>
             <% }) %>
