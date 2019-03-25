@@ -27,5 +27,9 @@
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
     "express-validator": "^5.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-google": "^0.12.0"
   }
 }
