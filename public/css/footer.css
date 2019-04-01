@@ -1,0 +1,51 @@
+footer .top, .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* Footer top */
+footer .top .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+footer .top .links a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+footer .top .links a:hover {
+  text-decoration: underline;
+}
+footer .top .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13%;
+}
+/* Fotter bottom */
+footer .bottom .credibility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b2b2b2;
+  width: 40%;
+  font-size: 15px;
+}
+footer .bottom .payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b2b2b2;
+  width: 40%;
+}
+footer .bottom .payment-methods .desc {
+  font-size: 15px;
+}
