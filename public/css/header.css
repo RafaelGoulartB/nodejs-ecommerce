@@ -1,0 +1,123 @@
+header {
+  width: 100vw;
+}
+header .nav-top, .nav-bottom {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Nav Top */
+header .nav-top {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  color: #4c4c4c;
+}
+/* Form will be 32% */
+header .search-box {
+  display: flex;
+  width: 32%;
+  border: 2px solid #F5F5F5;
+  border-radius: 3px;
+  height: 35px;
+}
+header .search-box form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .search-box form .inputs {
+  display: flex;
+  align-items: center;
+}
+header .search-box form input[type='text'] {
+  border: none;
+  margin-left: 10px;
+}
+header .search-box form input[type='submit'] {
+  background-image: url('../img/icons/ic_search.png');
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+}
+header .search-box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b2b2b2;
+  font-weight: 600;
+  font-size: 12px;
+}
+header .search-box .select img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-top .actions-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+header .nav-top .actions-items .action-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-top .actions-items .action-item a {
+  color: #808080;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 6px;
+}
+header .nav-top .actions-items .action-item a:hover {
+  text-decoration: underline;
+}
+/* Nav Bottom */
+header .nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+header .nav-bottom .all-categories {
+  color: #808080;
+}
+header .nav-bottom .all-categories img {
+  margin-right: 10px;
+}
+header .nav-bottom .links {
+  display: flex;
+  justify-content: space-between;
+  width: 38%;
+}
+header .nav-bottom .links a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #666666;
+}
+header .nav-bottom .links a:hover {
+  text-decoration: underline;
+}
+header .nav-bottom .config-site {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  color: #b2b2b2;
+}

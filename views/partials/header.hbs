@@ -1,1 +1,64 @@
-<h1>header</h1>
+<header id="header">
+  <div class="nav-top">
+    <h1 class="logo">Quantum</h1>
+    <div class="search-box">
+      <form action="#" method="get">
+        <div class="inputs">
+          <input type="submit" id="submit-search" value="">
+          <input type="text" placeholder="Search goods" name="search-term">
+        </div>
+        <div class="select">
+          <select name="category" id="category-to-search">
+            <option value="" selected="selected">
+              Category >
+            </option>
+            {{# each categories }}
+              <option value={{this.idcategory}}>{{this.categoryname}}</option>
+            {{/each}}
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="actions-items">
+      <div class="action-item">
+        <img src="img/icons/ic_shopping_cart.png" alt="Items in cart">
+        <a href="#"><span id="items-in-cart"></span>Items</a>
+      </div>
+      <div class="action-item">
+        <img src="img/icons/ic_favorite_border.png" alt="Items in wishlist">
+        <a href="#">Wish List</a>
+      </div>
+      <div class="action-item">
+        <img src="img/icons/ic_account_circle.png" alt="Sign In">
+        <a href="#">Sign In</a>
+      </div>
+    </div>
+  </div>
+  <div class="line-div"></div>
+  <div class="nav-bottom">
+    <a class="all-categories">
+      <img src="img/icons/ic_menu.png" alt="Dropdown all categories">
+      All Categories
+    </a>
+    <ul class="links">
+      <li class="link"><a href="#">Super Deals</a></li>
+      <li class="link"><a href="#">Featured Brands</a></li>
+      <li class="link"><a href="#">Collections</a></li>
+      <li class="link"><a href="#">Bestselling</a></li>
+    </ul>
+    <div class="config-site">
+      <div class="help-config">
+        Help
+        <img src="img/icons/ic_arrow_down.png">
+      </div>
+      <div class="currency-config">
+        USD
+        <img src="img/icons/ic_arrow_down.png">
+      </div>
+      <div class="language-config">
+        Language
+        <img src="img/icons/ic_arrow_down.png">
+      </div>
+    </div>
+  </div>
+</header>
