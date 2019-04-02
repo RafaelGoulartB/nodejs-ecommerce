@@ -13,6 +13,7 @@ class AppController {
 
     this.middlewares();
     this.routes();
+    this.errors();
   }
 
   middlewares() {
@@ -48,6 +49,16 @@ class AppController {
       .then('dao')
       .then('helpers')
       .into(this.app);
+  }
+  errors() {
+    this.app.use((req, res, next) => {
+      return res.status(404)
+        .render('errors/404', {title: 'Page not Found - 404'});
+    });
+    this.app.use((erros, req, res, next) => {
+      return res.status(500)
+        .render('errors/500', {title: 'Error - 500'});
+    });
   }
 }
 

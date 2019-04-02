@@ -1,8 +1,19 @@
+main {
+  min-height: 60vh;
+}
 body, html {
   font-family: 'Roboto', sans-serif;
 }
 main {
   background-color: #fafafa;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  color: #4c4c4c;
+  text-decoration: none;
 }
 .msg-div {
   width: 80vw;

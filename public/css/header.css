@@ -14,13 +14,6 @@ header .nav-top {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.logo {
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 24px;
-  letter-spacing: 1.25px;
-  color: #4c4c4c;
-}
 /* Form will be 32% */
 header .search-box {
   display: flex;
