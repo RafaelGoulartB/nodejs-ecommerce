@@ -44,3 +44,8 @@ main {
   height: 2px;
   background-color: #f5f5f5;
 }
+.vertical-line {
+  height: 100%;
+  width: 2px;
+  background-color: #f5f5f5;
+}

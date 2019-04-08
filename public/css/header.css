@@ -85,9 +85,9 @@ header .nav-top .actions-items .action-item a:hover {
 header .nav-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 82%;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
+  height: 3.5em;
 }
 header .nav-bottom .all-categories {
   color: #808080;
@@ -111,6 +111,11 @@ header .nav-bottom .links a:hover {
 header .nav-bottom .config-site {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  align-items: center;
+  height: 100%;
+  width: 28%;
   color: #b2b2b2;
+}
+header .nav-bottom .config-site .config {
+  /* margin-left: 2em; */
 }
