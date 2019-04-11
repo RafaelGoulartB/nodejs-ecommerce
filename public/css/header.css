@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
+  background-color: #fff;
 }
 header .nav-top, .nav-bottom {
   margin-right: auto;
@@ -87,7 +89,7 @@ header .nav-bottom {
   justify-content: space-between;
   align-items: center;
   width: 82%;
-  height: 3.5em;
+  height: 55px;
 }
 header .nav-bottom .all-categories {
   color: #808080;

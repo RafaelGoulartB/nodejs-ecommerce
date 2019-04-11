@@ -1,3 +1,6 @@
+footer {
+  box-shadow: 4px -2px 8px rgba(0,0,0,.05);
+}
 footer .top, .bottom {
   display: flex;
   align-items: center;

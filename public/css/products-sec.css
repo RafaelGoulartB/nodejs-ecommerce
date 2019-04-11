@@ -1,0 +1,54 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Categories */
+.products aside .categories {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.products aside .categories .category {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #808080;
+  justify-content: space-between;
+  padding: 10px 8px;
+  border-bottom: 2px solid #F5F5F5;
+}
+.products aside .categories .category:hover {
+  background-color: #f5f5f5;
+}
+.products aside .categories .category .label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.products aside .categories .category .label .category-name {
+  margin-left: 15px;
+}
+/* Promo Code */
+.products aside .promo-code {
+  position: relative;
+  margin-top: 1em;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 220px;
+}
+.products aside .promo-code .texts {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.products aside .promo-code .texts .title {
+  margin-bottom: 2em;
+  color: #666666;
+}
+.products aside .promo-code .texts .desc {
+  color: #d1d1d1;
+}

@@ -3,9 +3,13 @@ main {
 }
 body, html {
   font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
 }
 main {
   background-color: #fafafa;
+}
+.container {
+  margin: 3em auto;
 }
 .logo {
   text-transform: uppercase;
