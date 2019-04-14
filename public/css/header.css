@@ -16,7 +16,6 @@ header .nav-top {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* Form will be 32% */
 header .search-box {
   display: flex;
   width: 32%;
@@ -118,6 +117,21 @@ header .nav-bottom .config-site {
   width: 28%;
   color: #b2b2b2;
 }
-header .nav-bottom .config-site .config {
-  /* margin-left: 2em; */
+header .nav-bottom .config-site .config .cta {
+  height: 100%;
+}
+
+/* Header Dropdowns */
+header .dropdown .submenu-dropdown {
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
+  background-color: #fff;
+  border-radius: 5px;
+}
+header .dropdown .submenu-dropdown a {
+  color: #666666;
+  padding: 15px 30px;
+  border-bottom: 2px solid #F5F5F5;
+}
+header .all-categories .submenu-dropdown a {
+  text-transform: capitalize;
 }

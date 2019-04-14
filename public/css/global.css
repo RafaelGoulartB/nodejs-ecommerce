@@ -24,6 +24,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
+  margin-top: 1em;
 }
 .msg-text {
   font-size: 16px;
@@ -52,4 +53,32 @@ main {
   height: 100%;
   width: 2px;
   background-color: #f5f5f5;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown .submenu-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+
+  visibility: hidden;
+  z-index: 0;
+  transition: visibility .2s linear, z-index .2s linear;
+}
+.dropdown:hover > .submenu-dropdown {
+  visibility: visible;
+  z-index: 99;
+}
+.dropdown .submenu-dropdown a {
+  text-decoration: none;
+  color: #000000;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.dropdown .submenu-dropdown a:hover {
+  text-decoration: underline;
 }

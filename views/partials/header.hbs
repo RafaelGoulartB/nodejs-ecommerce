@@ -36,11 +36,20 @@
   </div>
   <div class="line-div"></div>
   <div class="nav-bottom">
-    <a class="all-categories">
-      <img src="img/icons/ic_menu.png" alt="Dropdown all categories">
-      All Categories
-    </a>
+    <div class="all-categories dropdown">
+      <div class="cta">
+        <img src="img/icons/ic_menu.png" alt="Dropdown all categories">
+        All Categories
+      </div>
+      <div class="submenu-dropdown">
+        {{# each categories }}
+          <a href="#">{{this.categoryname}}</a>
+        {{/each}}
+      </div>
+    </div>
+
     <div class="vertical-line"></div>
+
     <ul class="links">
       <li class="link"><a href="#">Super Deals</a></li>
       <li class="link"><a href="#">Featured Brands</a></li>
@@ -49,19 +58,37 @@
     </ul>
     <div class="config-site">
       <div class="vertical-line"></div>
-      <div class="help-config config">
-        Help
-        <img src="img/icons/ic_arrow_down.png">
+      <div class="help-config config dropdown">
+        <div class="cta">
+          Help
+          <img src="img/icons/ic_arrow_down.png">
+        </div>
+        <div class="submenu-dropdown">
+          <a href="#">Forum</a>
+          <a href="#">FAQ</a>
+        </div>
       </div>
       <div class="vertical-line"></div>
-      <div class="currency-config config">
-        USD
-        <img src="img/icons/ic_arrow_down.png">
+      <div class="currency-config config dropdown">
+        <div class="cta">
+          USD
+          <img src="img/icons/ic_arrow_down.png">
+        </div>
+        <div class="submenu-dropdown">
+          <a href="#">BRL</a>
+          <a href="#">XBT</a>
+        </div>
       </div>
       <div class="vertical-line"></div>
-      <div class="language-config config">
-        Language
-        <img src="img/icons/ic_arrow_down.png">
+      <div class="language-config config dropdown">
+        <div class="cta">
+          Language
+          <img src="img/icons/ic_arrow_down.png">
+        </div>
+        <div class="submenu-dropdown">
+          <a href="#">Portuguese</a>
+          <a href="#">English</a>
+        </div>
       </div>
     </div>
   </div>
