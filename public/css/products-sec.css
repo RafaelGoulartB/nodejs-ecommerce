@@ -1,6 +1,7 @@
 .products {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-gap: 15px;
   width: 82%;
   margin-left: auto;
   margin-right: auto;
@@ -9,6 +10,7 @@
 .products aside .categories {
   background-color: #ffffff;
   border-radius: 4px;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
 }
 .products aside .categories .category {
   display: flex;
@@ -37,6 +39,7 @@
   border-radius: 4px;
   background-color: #fff;
   height: 220px;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
 }
 .products aside .promo-code .texts {
   position: absolute;
@@ -51,4 +54,39 @@
 }
 .products aside .promo-code .texts .desc {
   color: #d1d1d1;
+}
+/* Nav Products */
+.products main nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
+}
+.products main nav .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 25px;
+}
+.products main nav .filters .filter a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 600;
+}
+.products main nav .filters .filter-selected a {
+  color: #1875f0;
+  border-bottom: 3px solid #1875f0;
+  padding-bottom: 15px;
+}
+.products main nav .display {
+  display: flex;
+  align-items: center;
+}
+.products main nav .display a {
+  margin-left: 8px;
+  margin-right: 8px;
 }

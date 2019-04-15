@@ -84,10 +84,29 @@
     </div>
   </aside>
   <main>
-    <nav></nav>
+    <nav>
+      <ul class="filters">
+        <li class="filter filter-selected"><a href="#">Popular products</a></li>
+        <li class="filter"><a href="#">Low price</a></li>
+        <li class="filter"><a href="#">High price</a></li>
+      </ul>
+      <div class="display">
+        <div class="vertical-line"></div>
+        <a href="#">
+          <img src="img/icons/ic_view_grid.png" alt="Display Grid">
+        </a>
+        <div class="vertical-line"></div>
+        <a href="#">
+          <img src="img/icons/ic_view_list.png" alt="Display Line">
+        </a>
+      </div>
+    </nav>
     <div class="products">
-      {{!-- For Each product --}}
-      <div class="product"></div>
+      {{# each products}}
+        <div class="product">
+          {{this}}
+        </div>
+      {{/each}}
     </div>
   </main>
 </section>
