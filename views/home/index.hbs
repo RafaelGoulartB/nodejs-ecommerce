@@ -101,11 +101,28 @@
         </a>
       </div>
     </nav>
-    <div class="products">
+    <div class="products-list">
       {{# each products}}
-        <div class="product">
-          {{this}}
-        </div>
+        <form class="product">
+          <div class="labels">
+            <p class="promotion">Sale</p>
+            <div class="actions">
+              <a href="#" class="add-list">
+                <img src="img/icons/ic_add_list.png" alt="Add to list">
+              </a>
+              <a href="#" class="add-favorites">
+                <img src="img/icons/ic_favorite_border.png" alt="Add to favorites">
+              </a>
+            </div>
+          </div>
+          <img src="img/products/{{this.img_url}}" alt="{{this.name}}">
+          <p class="name">{{this.name}}</p>
+          <span class="rating" data-default-rating="2.5"></span>
+          <div class="price">
+            <p class="price-value">$ {{this.price}}</p>
+            <img src="img/icons/ic_shopping_cart.png" alt="Add to cart">
+          </div>
+        </form>
       {{/each}}
     </div>
   </main>

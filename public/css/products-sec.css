@@ -1,7 +1,7 @@
 .products {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-gap: 15px;
+  grid-gap: 20px;
   width: 82%;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +38,7 @@
   margin-top: 1em;
   border-radius: 4px;
   background-color: #fff;
-  height: 220px;
+  height: 260px;
   box-shadow: 4px 2px 8px rgba(0,0,0,.05);
 }
 .products aside .promo-code .texts {
@@ -89,4 +89,82 @@
 .products main nav .display a {
   margin-left: 8px;
   margin-right: 8px;
+}
+/* Products */
+.products main .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products main .products-list .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 32%;
+  margin-top: 1.5em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
+}
+.products main .products-list .product .labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.products main .products-list .product .labels .promotion {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #b3b3b3;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: .7em 1.2em;
+  font-weight: 700;
+}
+.products main .products-list .product .labels .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+.products main .products-list .product .labels .actions .add-list {
+  margin-right: 20px;
+}
+.products main .products-list .product .labels .actions img {
+  width: 19px;
+  height: 18px;
+}
+.products main .products-list .product img {
+  width: 157px;
+  height: 160px;
+}
+.products main .products-list .product .name {
+  width: 75%;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  /* letter-spacing: .4px; */
+  line-height: 20px;
+  margin-bottom: 1.2em;
+  margin-top: 1.5em;
+}
+.products main .products-list .product .price {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.5em;
+}
+.products main .products-list .product .price .price-value {
+  color: #666666;
+  font-weight: 900;
+}
+.products main .products-list .product .price img {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
 }

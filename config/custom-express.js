@@ -55,10 +55,10 @@ class AppController {
       return res.status(404)
         .render('errors/404', {title: 'Page not Found - 404'});
     });
-    this.app.use((erros, req, res, next) => {
-      return res.status(500)
-        .render('errors/500', {title: 'Error - 500'});
-    });
+    // this.app.use((erros, req, res, next) => {
+    //   return res.status(500)
+    //     .render('errors/500', {title: 'Error - 500'});
+    // });
   }
 }
 
