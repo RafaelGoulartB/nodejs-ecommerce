@@ -1,0 +1,57 @@
+.news {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+.news .first, .news .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  background-color: #ffffff;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.05);
+  border-radius: 5px;
+}
+.news .first {
+  justify-content: space-between;
+  color: #666666;
+}
+.news .first .title {
+  font-size: 18px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.news .first img {
+  margin-bottom: 2em;
+}
+.news .second {
+  background-image: url('../img/news/smart-watches.png');
+}
+.news .second .title {
+  width: 80%;
+  margin: 8em auto 1em auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  line-height: 1.5em;
+}
+.news .second .desc {
+  color: #768282;
+}
+.news .third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+}
+.news .third div {
+  display: flex;
+  align-items: center;
+  height: 45%;
+  background-color: #ffffff;
+}
