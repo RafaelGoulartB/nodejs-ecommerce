@@ -14,7 +14,6 @@ module.exports = (app) => {
       .catch(err => warning = 'it was not possible list products');
 
     setTimeout(() => {
-      console.log(products);
       res.status(200).render('home/index', {
         title: 'Home',
         categories, products,

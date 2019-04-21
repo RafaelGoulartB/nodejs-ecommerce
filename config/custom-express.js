@@ -23,10 +23,7 @@ class AppController {
     this.app.use(session( {
       secret: 'secretpasscryp',
       resave: false,
-      saveUninitialized: true,
-      cookie: {
-        maxAge: 60000,
-      },
+      saveUninitialized: true
     }));
     this.app.use(csrf({cookie:true}));
     this.app.use(validator());

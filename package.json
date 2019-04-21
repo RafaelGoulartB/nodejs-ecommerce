@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "consign": "^0.1.6",
     "cookie-parser": "^1.4.4",
