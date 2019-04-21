@@ -2,6 +2,11 @@ module.exports = app => {
   app.get('/sign-up', (req, res) => {
     let success, warning = app.helpers.msg(req);
 
+    if (req.session['user'] || req.session['user'] != null) {
+      req.session['warning'] = 'You are not able to access this area!';
+      return res.redirect('/')
+    }
+
     res.render('sign/up', {
       title: 'Sign Up',
       success, warning,
@@ -30,6 +35,12 @@ module.exports = app => {
       .then(result => {
         req.session['success'] = result;
         // Create Session
+        req.session['user'] = {
+          username: username,
+          email: email,
+          admin: false,
+          cart: null,
+        }
         res.redirect('/');
       })
       .catch(err => {

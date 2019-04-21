@@ -30,7 +30,14 @@
       </div>
       <div class="action-item">
         <img src="img/icons/ic_account_circle.png" alt="Sign In">
-        <a href="/sign-in">Sign In</a>
+        {{# if user }}
+          <div class="user-session">
+            <p class="username">{{user.username}}</p>
+            <a href="/log-out">Log Out</a>
+          </div>
+        {{ else }}
+          <a href="/sign-in">Sign In</a>
+        {{/if}}
       </div>
     </div>
   </div>

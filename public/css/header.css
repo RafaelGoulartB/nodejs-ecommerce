@@ -82,6 +82,16 @@ header .nav-top .actions-items .action-item a {
 header .nav-top .actions-items .action-item a:hover {
   text-decoration: underline;
 }
+header .nav-top .actions-items .action-item .user-session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  text-align: center;
+}
+header .nav-top .actions-items .action-item .user-session a {
+  font-size: 10px;
+}
 /* Nav Bottom */
 header .nav-bottom {
   display: flex;

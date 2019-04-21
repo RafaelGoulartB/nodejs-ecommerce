@@ -42,6 +42,16 @@ class UserDAO {
       });
     });
   }
+  getUsername(email) {
+    return new Promise((resolve, reject) => {
+      this.connection.query('select username from users where email = ?', email,
+      (err, result) => {
+        if (err) return reject(err);
+        console.log(result[0].username);
+        return resolve(result[0].username);
+      });
+    })
+  }
 }
 
 module.exports = () => UserDAO;
