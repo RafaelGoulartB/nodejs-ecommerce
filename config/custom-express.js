@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const consign = require('consign');
@@ -38,8 +39,8 @@ class AppController {
   }
 
   routes() {
-    this.app.set('views', './views');
-    this.app.use(express.static('./public'));
+    this.app.set('views', path.join(__dirname, '../views'));
+    this.app.use(express.static(path.join(__dirname, '../public')));
 
     consign()
       .include('routes')

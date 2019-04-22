@@ -24,12 +24,23 @@ class productsDAO {
   }
   orderedList(order=null) {
     return new Promise((resolve, reject) => {
-      this.connection.query('select * from products order by ?', order,
+      if (order == 'low-price') {
+        this.connection.query('select * from products ORDER BY price ASC',
         (err, result) => {
           if (err) return reject(err);
           return resolve(result);
-        }
-      );
+        });
+      }
+      this.connection.query('select * from products ORDER BY ?? DESC', order,
+        (err, result) => {
+          if (err) return reject(err);
+          return resolve(result);
+      });
+    });
+  }
+  filteredList(filter) {
+    return new Promise((resolve, reject) => {
+
     });
   }
 }

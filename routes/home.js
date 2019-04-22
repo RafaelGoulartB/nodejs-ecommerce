@@ -13,7 +13,6 @@ module.exports = (app) => {
       .then(result => products = result)
       .catch(err => warning = 'it was not possible list products');
 
-    console.log(req.session['user']);
     setTimeout(() => {
       res.status(200).render('home/index', {
         title: 'Home',
