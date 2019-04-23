@@ -22,11 +22,11 @@
     <div class="actions-items">
       <div class="action-item">
         <img src="img/icons/ic_shopping_cart.png" alt="Items in cart">
-        <a href="#"><span id="items-in-cart"></span>Items</a>
+        <a href="/cart"><span id="items-in-cart"></span>Items</a>
       </div>
       <div class="action-item">
         <img src="img/icons/ic_favorite_border.png" alt="Items in wishlist">
-        <a href="#">Wish List</a>
+        <a href="/wishlist">Wish List</a>
       </div>
       <div class="action-item">
         <img src="img/icons/ic_account_circle.png" alt="Sign In">
@@ -50,7 +50,7 @@
       </div>
       <div class="submenu-dropdown">
         {{# each categories }}
-          <a href="#">{{this.categoryname}}</a>
+          <a href="/filter/{{this.categoryname}}">{{this.categoryname}}</a>
         {{/each}}
       </div>
     </div>

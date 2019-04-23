@@ -82,9 +82,9 @@
   <main>
     <nav>
       <ul class="filters">
-        <li class="filter"><a href="#">Popular products</a></li>
-        <li class="filter"><a href="#">Low price</a></li>
-        <li class="filter"><a href="#">High price</a></li>
+        <li class="filter"><a href="/order/rating">Popular products</a></li>
+        <li class="filter"><a href="/order/low-price">Low price</a></li>
+        <li class="filter"><a href="/order/price">High price</a></li>
       </ul>
       <div class="display">
         <div class="vertical-line"></div>
@@ -103,10 +103,10 @@
           <div class="labels">
             <p class="promotion">Sale</p>
             <div class="actions">
-              <a href="#" class="add-list">
+              <a href="/add-to-cart/{{this.id}}" class="add-list">
                 <img src="img/icons/ic_add_list.png" alt="Add to list">
               </a>
-              <a href="#" class="add-favorites">
+              <a href="/add-to-favorite/{{this.id}}" class="add-favorites">
                 <img src="img/icons/ic_favorite_border.png" alt="Add to favorites">
               </a>
             </div>
@@ -116,7 +116,9 @@
           <span class="rating" data-default-rating="2.5"></span>
           <div class="price">
             <p class="price-value">$ {{this.price}}</p>
-            <img src="img/icons/ic_shopping_cart.png" alt="Add to cart">
+            <a href="/add-to-cart/{{this.id}}">
+              <img src="img/icons/ic_shopping_cart.png" alt="Add to cart">
+            </a>
           </div>
         </form>
       {{/each}}
