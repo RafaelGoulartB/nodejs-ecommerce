@@ -111,9 +111,11 @@
               </a>
             </div>
           </div>
-          <img src="img/products/{{this.img_url}}" alt="{{this.name}}">
+          <img src="img/products/{{this.img_url}}" alt="{{this.name}}" class="product-img">
           <p class="name">{{this.name}}</p>
-          <span class="rating" data-default-rating="2.5"></span>
+          {{!-- Rating System --}}
+          <div id="rating" data-rating="{{this.rating}}"></div>
+
           <div class="price">
             <p class="price-value">$ {{this.price}}</p>
             <a href="/add-to-cart/{{this.id}}">
@@ -125,3 +127,5 @@
     </div>
   </main>
 </section>
+
+<script src="js/rating.js"></script>
