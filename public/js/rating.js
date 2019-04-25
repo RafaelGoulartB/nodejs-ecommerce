@@ -15,17 +15,17 @@ divsRating.forEach(divRating => {
     star.classList.add('rating-star');
 
     if (i < numOfStars) {
-      star.src = 'img/icons/rating/ic_star_full.png'
+      star.src = '/img/icons/rating/ic_star_full.png'
       divRating.appendChild(star);
       continue;
     }
     if (half_star) {
       half_star = false;
-      star.src = 'img/icons/rating/ic_star_half.png'
+      star.src = '/img/icons/rating/ic_star_half.png'
       divRating.appendChild(star);
       continue;
     }
-    star.src = 'img/icons/rating/ic_star_empty.png'
+    star.src = '/img/icons/rating/ic_star_empty.png'
     divRating.appendChild(star);
   }
 
