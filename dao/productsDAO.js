@@ -43,6 +43,15 @@ class productsDAO {
 
     });
   }
+  getById(ids) {
+    return new Promise((resolve, reject) => {
+      this.connection.query(`select * from products where id in (${ids})`,
+      (err, result) => {
+        if (err) return reject(err);
+        return resolve(result);
+      });
+    });
+  }
 }
 
 module.exports = () => productsDAO;
