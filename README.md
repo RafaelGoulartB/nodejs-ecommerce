@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to ecommerce-quantum 👋</h1>
+<h1 align="center">Ecommerce-Quantum</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme">
@@ -26,11 +26,6 @@ npm install
 npm run start
 ```
 
-## Run tests
-
-```sh
-npm run test
-```
 
 ## Author
 
