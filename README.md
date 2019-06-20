@@ -25,7 +25,11 @@ npm install
 ```sh
 npm run start
 ```
+## Dev Mode
 
+```sh
+npm run dev
+```
 
 ## Author
 
