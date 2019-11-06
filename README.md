@@ -12,6 +12,8 @@
   </a>
 </p>
 
+![Project Image](https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/Ecommerce.jpg)
+
 ### 🏠 [Homepage](https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme)
 
 ## Install
