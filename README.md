@@ -12,8 +12,6 @@
   </a>
 </p>
 
-![Project Image](https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/Ecommerce.jpg)
-
 ### 🏠 [Homepage](https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme)
 
 ## Install
@@ -39,6 +37,8 @@ npm run dev
 
 * Github: [@RafaelGoulartB](https://github.com/RafaelGoulartB)
 
+
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/RafaelGoulartB/Ecommerce-Quantum/issues).
@@ -46,6 +46,8 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+![Project Image](https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/Ecommerce.jpg)
 
 ## 📝 License
 
