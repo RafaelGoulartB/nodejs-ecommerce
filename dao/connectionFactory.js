@@ -5,7 +5,7 @@ function connectionFactory() {
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'equantom'
+    database: 'equantom',
   });
 }
 

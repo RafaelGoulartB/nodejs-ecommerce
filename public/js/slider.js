@@ -6,7 +6,7 @@ function updateSlider(pos) {
   const frame = document.getElementById('slider');
   const dotSlider = document.getElementById('slider-tabs');
 
-  if(pos == 1) {
+  if (pos == 1) {
     // Change IMG
     frame.classList.add('img-slider1');
     frame.classList.remove('img-slider2');
@@ -16,7 +16,7 @@ function updateSlider(pos) {
     dotSlider.children[1].classList.remove('current-tab');
     dotSlider.children[2].classList.remove('current-tab');
   }
-  if(pos == 2) {
+  if (pos == 2) {
     frame.classList.remove('img-slider1');
     frame.classList.add('img-slider2');
     frame.classList.remove('img-slider3');
@@ -25,7 +25,7 @@ function updateSlider(pos) {
     dotSlider.children[1].classList.add('current-tab');
     dotSlider.children[2].classList.remove('current-tab');
   }
-  if(pos == 3) {
+  if (pos == 3) {
     frame.classList.remove('img-slider1');
     frame.classList.remove('img-slider2');
     frame.classList.add('img-slider3');
@@ -37,14 +37,14 @@ function updateSlider(pos) {
 }
 
 function nextSlider() {
-  if(current >= 3) current = 1;
+  if (current >= 3) current = 1;
   else current = ++current;
 
-  updateSlider(current)
+  updateSlider(current);
 }
 function previusSlider() {
-  if(current <= 1) current = 3;
+  if (current <= 1) current = 3;
   else current = --current;
 
-  updateSlider(current)
+  updateSlider(current);
 }

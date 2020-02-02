@@ -1,17 +1,17 @@
 module.exports = (app) => {
   app.get('/', (req, res) => {
-    let success, warning = app.helpers.msg(req);
-    let categories, products;
+    let success; let warning = app.helpers.msg(req);
+    let categories; let products;
     const connection = app.dao.connectionFactory();
     const categoriesDAO = new app.dao.categoriesDAO(connection);
     const productsDAO = new app.dao.productsDAO(connection);
 
     categoriesDAO.list()
-      .then(result => categories = result)
-      .catch(err => warning = 'it was not possible list categories');
+        .then((result) => categories = result)
+        .catch((err) => warning = 'it was not possible list categories');
     productsDAO.list(9)
-      .then(result => products = result)
-      .catch(err => warning = 'it was not possible list products');
+        .then((result) => products = result)
+        .catch((err) => warning = 'it was not possible list products');
 
     setTimeout(() => {
       res.status(200).render('home/index', {
@@ -20,7 +20,6 @@ module.exports = (app) => {
         success, warning,
         user: req.session['user'],
       });
-    }, 100)
-
-  })
-}
+    }, 100);
+  });
+};
