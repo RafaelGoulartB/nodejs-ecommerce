@@ -30,6 +30,11 @@
 .news .second {
   background-image: url('../img/news/smart-watches.png');
 }
+@media(min-width: 1441px) {
+  .news .second {
+    background-size: cover;
+  }
+}
 .news .second .title {
   width: 80%;
   margin: 8em auto 1em auto;
