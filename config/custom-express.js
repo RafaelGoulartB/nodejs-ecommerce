@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const csrf = require('csurf');
 const validator = require('express-validator');
+const cors = require('cors');
 
 class AppController {
   constructor() {
@@ -26,6 +27,7 @@ class AppController {
       resave: false,
       saveUninitialized: true,
     }));
+    this.app.use(cors())
     this.app.use(csrf({cookie: true}));
     this.app.use(validator());
 
