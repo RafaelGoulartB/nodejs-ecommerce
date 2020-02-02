@@ -1,6 +1,8 @@
+require('dotenv/config')
+
 const app = require('./config/custom-express');
 
-const HOST = 'localhost';
-const PORT = 3000;
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, HOST, () => console.log(`Server is on at http://${HOST}:${PORT}`));
