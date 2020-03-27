@@ -12,11 +12,22 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme)
+## 💻 Technologies
+This project was made using the follow technologies:
+<ul>
+  <li><a href="https://nodejs.org/en/">Node.js</a></li>
+  <li><a href="https://expressjs.com/">Express</a></li>
+  <li><a href="https://github.com/mysqljs/mysql">Mysql</a></li>
+  <li><a href="https://www.npmjs.com/package/express-handlebars">Express Handlebars</a></li>
+  <li><a href="https://eslint.org/">Eslint</a></li>
+</ul>
+
 
 ## Install
 
 ```sh
+git clone https://github.com/RafaelGoulartB/Nodejs-Ecommerce.git
+cd Nodejs-Ecommerce
 npm install
 ```
 
