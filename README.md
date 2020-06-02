@@ -1,4 +1,7 @@
 <h1 align="center">Ecommerce-Quantum</h1>
+
+:exclamation: :exclamation: This project was updated to a new repo: https://github.com/RafaelGoulartB/Next.js-Ecommerce
+
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme">
