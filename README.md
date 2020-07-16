@@ -5,7 +5,7 @@
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-no-red.svg" target="_blank" />
   </a>
   <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum/graphs/commit-activity">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-red.svg" target="_blank" />
