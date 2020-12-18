@@ -1,19 +1,63 @@
-<h1 align="center">Ecommerce-Quantum</h1>
+<h1 align="center">Ecommerce made with Node.js - MVC</h1>
 
-<p>
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-no-red.svg" target="_blank" />
+<p align="center">	
+   <a href="https://www.linkedin.com/in/rafael-goulartb/">
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-03B0E8?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <a href="https://github.com/RafaelGoulartB/nodejs-ecommerce#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-03B0E8.svg" target="_blank" />
   </a>
-  <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-red.svg" target="_blank" />
+  <a href="https://github.com/RafaelGoulartB/nodejs-ecommerce/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-03B0E8.svg" target="_blank" />
   </a>
-  <a href="https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  <a href="https://github.com/RafaelGoulartB/nodejs-ecommerce/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-03B0E8.svg" target="_blank" />
   </a>
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/RafaelGoulartB/nodejs-ecommerce?color=03B0E8" />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/RafaelGoulartB/nodejs-ecommerce?color=03B0E8" />
+  <img alt="" src="https://img.shields.io/github/repo-size/RafaelGoulartB/nodejs-ecommerce?color=03B0E8" />
 </p>
 
-## 💻 Technologies
+> This project was made to show a full ecommerce plataform made with Next.js and Nextjs Serverless functions to build the backend, using Apollo Server and Apollo Client to GraphQL.
+
+
+<div align="center">
+  <sub>The ecommerce project. Built with ❤︎ by
+    <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
+    <a href="https://github.com/RafaelGoulartB/nodejs-ecommerce/graphs/contributors">
+      contributors
+    </a>
+  </sub>
+</div>
+
+<br />
+<div align="center">
+  <img src="https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/Ecommerce.jpg" width="720">
+</div>
+
+---
+
+# :pushpin: Table of Contents
+
+* [Demo Website](#eyes-demo-website)
+* [Technologies](#computer-technologies)
+* [Features](#rocket-features)
+* [How to run](#construction_worker-how-to-run)
+* [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
+* [License](#closed_book-license)
+
+<h2 align="left"> 📥 Layout available at: </h2>
+<p align="center">
+    <a title="Acess Figma Web" href="https://www.figma.com/file/fDLkOXAz4k3ILWb8PoDivJZF/E-Commerce-Quantum?node-id=0%3A1">
+        <img alt="Direct Download" src="https://img.shields.io/badge/Acess Figma Web-black?style=flat-square&logo=figma&logoColor=red" width="200px" />
+    </a>
+</p>
+
+# :eyes: Demo Website
+👉  demo: https://ecommerce-quantum.herokuapp.com/
+
+# :computer: Technologies
 This project was made using the follow technologies:
 <ul>
   <li><a href="https://nodejs.org/en/">Node.js</a></li>
@@ -21,17 +65,21 @@ This project was made using the follow technologies:
   <li><a href="https://github.com/mysqljs/mysql">Mysql</a></li>
   <li><a href="https://www.npmjs.com/package/express-handlebars">Express Handlebars</a></li>
   <li><a href="https://eslint.org/">Eslint</a></li>
-</ul>
+</ul>   
 
+# :rocket: Features
 
+- List Products
+- Filter products by Category
+- Add products to Wishlist
+- Add products to Cart
+  
+# :construction_worker: How to run
 ## Install
 
 ```sh
-git clone https://github.com/RafaelGoulartB/Nodejs-Ecommerce.git
-cd Nodejs-Ecommerce
 npm install
 ```
-
 ## Usage
 
 ```sh
@@ -43,28 +91,25 @@ npm run start
 npm run dev
 ```
 
-## Author
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-👤 **Rafael GoulartB**
+# :bug: Issues
 
-* Github: [@RafaelGoulartB](https://github.com/RafaelGoulartB)
+Feel free to **file a new issue** with a respective title and description on the the [NodeJS Ecommerce](https://github.com/RafaelGoulartB/nodejs-ecommerce/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
+# :tada: Contributing
+First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
 
+Here's some tips:
 
-## 🤝 Contributing
+* Check the [issues page](https://github.com/RafaelGoulartB/nodejs-ecommerce/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
+* Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/RafaelGoulartB/Ecommerce-Quantum/issues).
+Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
-## Show your support
+# :closed_book: License
 
-Give a ⭐️ if this project helped you!
+Released in 2020.
+This project is under the [MIT license](./LICENSE).
 
-![Project Image](https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/Ecommerce.jpg)
-
-## 📝 License
-
-Copyright © 2019 [Rafael GoulartB](https://github.com/RafaelGoulartB).<br />
-This project is [MIT](https://github.com/RafaelGoulartB/Ecommerce-Quantum/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+Made with love by [RafaelGoulartB](https://github.com/RafaelGoulartB) 🚀
